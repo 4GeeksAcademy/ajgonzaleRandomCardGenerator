@@ -1,1 +1,14 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.card {
+  width: 250px;
+  height: 400px;
+}
+
+.center {
+  align-content: center;
+}
+
+.bottom {
+  align-content: end;
+}
