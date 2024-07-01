@@ -13,16 +13,17 @@ window.onload = function() {
 
   let suit = Math.floor(Math.random() * 4);
   let number = Math.floor(Math.random() * 12);
-  let color = Math.floor(Math.random() * 2);
+  let color = "black";
+  if (suit < 2) color = "red";
 
   let suitsDivList = document.querySelectorAll(".suit");
 
   for (let i = 0; i < suitsDivList.length; i++) {
     suitsDivList[i].innerHTML = suits[suit];
-    color == 1 ? (suitsDivList[i].style.color = "red") : "";
+    suitsDivList[i].style.color = color;
   }
 
   let numberDiv = document.querySelector(".number");
   numberDiv.innerHTML = numbers[number];
-  color == 1 ? (numberDiv.style.color = "red") : "";
+  numberDiv.style.color = color;
 };
